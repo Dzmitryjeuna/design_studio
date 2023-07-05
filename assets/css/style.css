@@ -753,6 +753,12 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .promo__socil {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1300px) {
   .work__title {
     font-size: 310px;
@@ -1046,6 +1052,10 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .work__item {
+    margin: 0 10px 0 0;
+  }
+
   .book-offer {
     padding: 75px 0;
   }
@@ -1193,6 +1203,11 @@ body {
 
   .subscribe-title {
     font-size: 38px;
+  }
+
+  .work__item {
+    margin: 0 5px 0 0;
+    max-width: 260px;
   }
 
 }

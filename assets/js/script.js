@@ -21,4 +21,21 @@ link.addEventListener('click', () => {
  
 });
 
+$(function () {
+  $('.work__items').slick({
+    slidesToShow: 1,
+    mobileFirst: true,
+    arrows: false,
+    dots: false,
+    infinite: false,
+    // centerMode: true,
+    variableWidth: true,
+    responsive: [
+      {
+          breakpoint: 600,
+          settings: "unslick",
+      }
+  ]
+  });
+});
 
