@@ -14,12 +14,21 @@ btn.addEventListener('click', () => {
 });
 
 
-const link = document.querySelector('.item__link');
+const links = document.querySelectorAll('.item__link');
 
-link.addEventListener('click', () => {
-  link.classList.toggle('item__link--active');
- 
-});
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+
+  links.forEach((otherLink) => {
+    if (otherLink !== link) {
+      otherLink.classList.remove('item__link--active');
+    }
+  });
+
+    link.classList.toggle('item__link--active');
+  });
+});  
+
 
 $(function () {
   $('.work__items').slick({

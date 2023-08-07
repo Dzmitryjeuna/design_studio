@@ -1028,6 +1028,18 @@ body {
     transition-delay: 0s, 0s, 200ms, 400ms;
   }
 
+  .item__link--active::after {
+    display: none;
+  }
+
+  .item__link {
+    padding: 10px;
+  }
+
+  .item__link--active {
+    color: #81BD60;
+  }
+
   .promo {
     height: calc(85vh - 96px);
   }
@@ -1106,7 +1118,7 @@ body {
   }
 
   .promo {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .work__title {
