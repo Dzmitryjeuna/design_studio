@@ -767,10 +767,13 @@ body {
   .about::after {
     left: -145px;
   }
-
 }
 
 @media (max-width: 1200px) {
+  .promo {
+    height: calc(112vh - 91px);
+  }
+  
   .about__title::before {
     left: 70%;
   }
